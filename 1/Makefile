@@ -4,10 +4,10 @@ QuickSort: QuickSort.hs Main.hs
 
 .PHONY: run lint clean
 run: all
-	./QuickSort
+	./QuickSort -u result.csv
 
 lint:
 	hlint -c QuickSort.hs
 
 clean:
-	rm -f *~ *.o *.hi QuickSort
+	rm -f *~ *.o *.hi *.csv QuickSort
